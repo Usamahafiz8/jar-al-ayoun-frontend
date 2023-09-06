@@ -41,7 +41,7 @@ const UHeading3 = ({ children, styles }) => (
  );
 
  const pointsParagraph = ({ children, styles }) => (
-  <Typography
+  <Typography variant="h1"
     style={{
       fontWeight: 400,
       fontSize: "12px",
@@ -51,4 +51,18 @@ const UHeading3 = ({ children, styles }) => (
     {children}
   </Typography> 
  );
-export { UHeading1, UHeading2, UHeading3 , pointsParagraph};
+
+ const colorheading= ({ children, styles }) => (
+  <Typography variant="h1"
+    style={{
+      fontWeight: 400,
+      fontSize: "12px",
+      ...styles,
+    }}
+  >
+    {children}
+  </Typography> 
+ );
+
+
+export { UHeading1, UHeading2, UHeading3 , pointsParagraph, colorheading};
